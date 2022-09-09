@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  title = 'Review 4P';
+  counter: number = 0;
+  urlImg1: string = "assets/images/tree.png";
+  urlImg2: string = "assets/images/mountains.png";
+  urlImg3: string = "assets/images/eyeofcthulhu.png";
+  courses: string[] = [
+    "Coding in JS",
+    "Algorithms",
+    "Project menagment"
+  ];
+  isActive: boolean = true;
+
+  enlarge() : void {
+    this.counter++;
+  }
 }
