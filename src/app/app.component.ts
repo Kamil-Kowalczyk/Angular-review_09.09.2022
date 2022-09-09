@@ -21,4 +21,7 @@ export class AppComponent {
   enlarge() : void {
     this.counter++;
   }
+  changeVisibility() : void {
+    this.isActive = !this.isActive;
+  }
 }
